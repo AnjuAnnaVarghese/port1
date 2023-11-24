@@ -1,0 +1,96 @@
+body{
+    background: palevioletred;
+}
+
+/* Change Text */
+
+.change-text h3 .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+
+.change-text h3 .word .letter{
+
+    transform-origin: center center 25px;
+}
+
+.change-text h3 .word .letter.out{
+
+transform: rotateX(90deg);
+transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
+}
+
+.change-text h3 .word .letter.in{
+
+transition: 0.38s ease;
+}
+.change-text h3 .word .letter.behind{
+
+transform: rotateX(-90deg)
+}
+
+/* End Change Text */
+.home-img img{
+
+    max-width: 510px;
+    height: 340px;
+    float:left;
+    opacity: 0;
+    animation: bigger 1s ease forwards,floatImg 4s ease-in-out infinite;
+    
+    animation-delay: 2s , 3s;
+    
+    
+    }
+    /* Image Animation */
+    @keyframes bigger{
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        
+        
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
+        } 
+        /* 
+        keyframes */
+        
+        @keyframes floatImg{
+        0% {
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-18px);
+        }
+        
+        100%{
+            transform: translateY(0);
+        }
+        }
+        /*  Service  */
+
+.services .serv-content .card {
+    width: calc(100% - 20px);
+    background: pink;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    float:left;
+    left:200px;
+  }
+
+  
+  .services .serv-content .card:hover {
+    background: blue;
+  }
+
+  .services .serv-content .card .box {
+    transition: all 0.3s ease;
+  }
+       
